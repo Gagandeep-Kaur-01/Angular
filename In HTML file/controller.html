@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+  </script>
+
+</head>
+<body> 
+    <div ng-app="myApp" ng-controller="myCtrl">
+        <button type="button" class="btn btn-success" ng-click= "changeColor()"> {{Hi}}</button>
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.Hi = "Hi";
+            $scope.changeColor = function() {
+                $scope.Hi = "Bye";
+             
+            }
+        });
+    </script>
+
+
+
+</body>        
+</html>
+
+
