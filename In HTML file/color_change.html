@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+    <p> Write the name of color in the box, which you want to display:</p>
+
+    <div ng-app="" ng-init="myCol = 'yellow'">
+        <input style = "background-color: {{myCol}}" ng-model= "myCol">        
+    </div>
+</body>    
+</html>
