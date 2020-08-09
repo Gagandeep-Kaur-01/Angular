@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+    <div ng-app="">    <!--ng-app directive initializes an AngularJS application  -->
+        <p>Input value: </p>
+        <p>Name: <input type = "text" ng-model="name" </p>
+        <!--ng-model directive binds the value of HTML controls (input, select, textarea) to application data-->
+        <p ng-bind="name"></p>
+        <!-- ng-bind directive binds application data to the HTML view-->
+    </div>
+</body>
+</html>
