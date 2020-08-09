@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+
+<body>
+<div ng-app="">  
+<p>Input value: </p>
+        <p>First Name: <input type = "text" ng-model="fname"</p>
+        <p>Last Name: <input type = "text" ng-model="lname"</p>
+        <p> {{fname | uppercase}} {{lname | uppercase}}</p>
+        <!-- or-->
+        <p>Full Name: {{fname + " " +lname}}</p>
+        
+    </div>
+</body>
+</html>
