@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+    <head>
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/Countries_cities_list.js"></script>
+    </head>
+
+    <body ng-app="myModule" style="font-family:Arial">
+        <div ng-controller="myController">
+            <ul>
+                <li ng-repeat = "country in countries"> 
+                   <b> {{ country.name }}</b> 
+                    <ul>
+                        <li ng-repeat="city in country.cities">
+                            {{ city.name }} 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+    </body>
+</html>
