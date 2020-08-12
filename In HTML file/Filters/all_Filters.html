@@ -20,9 +20,9 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="employee in employees">
-                        <td>{{ employee.name }} </td>
-                        <td>{{ employee.dateOfBirth }} </td>
-                        <td>{{ employee.gender }} </td>
+                        <td>{{ employee.name | uppercase }} </td>
+                        <td>{{ employee.dateOfBirth  | date:"dd/MM/yyyy" }} </td>
+                        <td>{{ employee.gender | lowercase }} </td>
                         <td>{{ employee.salary }}</td>
                         <td>{{ employee.salary }}</td>                        
                     </tr>
