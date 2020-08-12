@@ -14,7 +14,7 @@
                         <th>Name</th>
                         <th>Date of Birth</th>
                         <th>Gender</th>
-                        <th>Salary</th>
+                        <th>Salary (number)</th>
                         <th>Salary</th>
                     </tr>
                 </thead>
@@ -23,7 +23,7 @@
                         <td>{{ employee.name | uppercase }} </td>
                         <td>{{ employee.dateOfBirth  | date:"dd/MM/yyyy" }} </td>
                         <td>{{ employee.gender | lowercase }} </td>
-                        <td>{{ employee.salary }}</td>
+                        <td>{{ employee.salary  | number }}</td>
                         <td>{{ employee.salary }}</td>                        
                     </tr>
                 </tbody>
