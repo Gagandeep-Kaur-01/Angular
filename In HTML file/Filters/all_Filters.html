@@ -15,7 +15,7 @@
                         <th>Date of Birth</th>
                         <th>Gender</th>
                         <th>Salary (number)</th>
-                        <th>Salary</th>
+                        <th>Salary (currency)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,7 +24,7 @@
                         <td>{{ employee.dateOfBirth  | date:"dd/MM/yyyy" }} </td>
                         <td>{{ employee.gender | lowercase }} </td>
                         <td>{{ employee.salary  | number : 2}}</td>
-                        <td>{{ employee.salary }}</td>                        
+                        <td>{{ employee.salary  | currency}}</td>                         
                     </tr>
                 </tbody>
             </table>
