@@ -13,6 +13,14 @@ var myApp = angular
 
                     $scope.technologies = technologies;
 
+                    $scope.incrementLikes = function (technology) {
+                        technology.likes++;
+                    }
+
+                    $scope.incrementDislikes = function (technology) {
+                        technology.dislikes++;
+                    }
+
                     
                     
                 });
