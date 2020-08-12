@@ -13,5 +13,7 @@ var myApp = angular
                     ];
 
                     $scope.employees = employees;
+
+                    $scope.rowLimit = 3; //by default, show only 3 rows.
                     
                 });

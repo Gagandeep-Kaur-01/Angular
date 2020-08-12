@@ -8,6 +8,10 @@
 
     <body ng-app="myModule" style="font-family:Arial">
         <div ng-controller="myController">
+            Rows to display: <input type="number" step="1" min="0" max="5" ng-model="rowLimit"/>
+            <br/>
+            <br/>
+
             <table>
                 <thead>
                     <tr>
@@ -19,15 +23,16 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="employee in employees">
+                    <tr ng-repeat="employee in employees | limitTo:3: 2">
                         <td>{{ employee.name | uppercase }} </td>
                         <td>{{ employee.dateOfBirth  | date:"dd/MM/yyyy" }} </td>
                         <td>{{ employee.gender | lowercase }} </td>
-                        <td>{{ employee.salary  | number : 2}}</td>
-                        <td>{{ employee.salary  | currency: "£" : 1}}</td>                         
+                        <td>{{ employee.salary  | number: 2 }}</td>
+                        <td>{{ employee.salary  | currency: "£" : 1}}</td>                        
                     </tr>
                 </tbody>
             </table>
             
     </body>
 </html>
+
